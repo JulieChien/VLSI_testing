@@ -250,19 +250,20 @@ void printFault(int (*List1)[pat][L], int (*List2)[pat][L], bool SA)
         for (j = 0; j < L; j++) {
             sum += (*List1)[i][j];
             sum += (*List2)[i][j];
+
             if ((*List1)[i][j] != 0) {
                 switch (j)
                 {
-                case 0: printf("x1-S-A-%d ", SA); break;
-                case 1: printf("x2-S-A-%d ", SA); break;
-                case 2: printf("x3-S-A-%d ", SA); break;
-                case 3: printf("x4-S-A-%d ", SA); break;
-                case 4: printf("y21-S-A-%d ", SA); break;
-                case 5: printf("y22-S-A-%d ", SA); break;
-                case 6: printf("a-S-A-%d ", SA); break;
-                case 7: printf("b-S-A-%d ", SA); break;
-                case 8: printf("c-S-A-%d ", SA); break;
-                case 9: printf("z-S-A-%d ", SA); break;
+                case 0: printf("x1-S-A-0, "); break;
+                case 1: printf("x2-S-A-0, "); break;
+                case 2: printf("x3-S-A-0, "); break;
+                case 3: printf("x4-S-A-0, "); break;
+                case 4: printf("y21-S-A-0, "); break;
+                case 5: printf("y22-S-A-0, "); break;
+                case 6: printf("a-S-A-0, "); break;
+                case 7: printf("b-S-A-0, "); break;
+                case 8: printf("c-S-A-0, "); break;
+                case 9: printf("z-S-A-0, "); break;
                 }
                 // printf("\n");
             }
@@ -270,16 +271,16 @@ void printFault(int (*List1)[pat][L], int (*List2)[pat][L], bool SA)
             if ((*List2)[i][j] != 0) {
                 switch (j)
                 {
-                case 0: printf("x1-S-A-%d ", SA); break;
-                case 1: printf("x2-S-A-%d ", SA); break;
-                case 2: printf("x3-S-A-%d ", SA); break;
-                case 3: printf("x4-S-A-%d ", SA); break;
-                case 4: printf("y21-S-A-%d ", SA); break;
-                case 5: printf("y22-S-A-%d ", SA); break;
-                case 6: printf("a-S-A-%d ", SA); break;
-                case 7: printf("b-S-A-%d ", SA); break;
-                case 8: printf("c-S-A-%d ", SA); break;
-                case 9: printf("z-S-A-%d ", SA); break;
+                case 0: printf("x1-S-A-1, "); break;
+                case 1: printf("x2-S-A-1, "); break;
+                case 2: printf("x3-S-A-1, "); break;
+                case 3: printf("x4-S-A-1, "); break;
+                case 4: printf("y21-S-A-1, "); break;
+                case 5: printf("y22-S-A-1, "); break;
+                case 6: printf("a-S-A-1, "); break;
+                case 7: printf("b-S-A-1, "); break;
+                case 8: printf("c-S-A-1, "); break;
+                case 9: printf("z-S-A-1, "); break;
                 }
                 // printf("\n");
             }
