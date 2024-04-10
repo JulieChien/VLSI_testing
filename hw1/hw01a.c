@@ -1,46 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#define pat 16
-#define L 10
-
-#define Px1_SA0 0
-#define Px2_SA0 1
-#define Px3_SA0 2
-#define Px4_SA0 3
-#define Py21_SA0 4
-#define Py22_SA0 5
-#define Pa_SA0 6
-#define Pb_SA0 7
-#define Pc_SA0 8
-#define Pz_SA0 9
-
-#define Px1_SA1 10
-#define Px2_SA1 11
-#define Px3_SA1 12
-#define Px4_SA1 13
-#define Py21_SA1 14
-#define Py22_SA1 15
-#define Pa_SA1 16
-#define Pb_SA1 17
-#define Pc_SA1 18
-#define Pz_SA1 19
-
-// Fault list
-int Lx1[pat][L];    // 0 - 9 for SA0, 10 - 19 for SA1
-int Lx2[pat][L];    // 0 - 9: x1, x2, x3, x4, y21, y22, a, b, c, z
-int Lx3[pat][L]; 
-int Lx4[pat][L];;     
-int Ly21[pat][L];
-int Ly22[pat][L];
-int La[pat][L];;
-int Lb[pat][L];
-int Lc[pat][L];
-int Lz[pat][L];
-int Lx[pat] = {0};
-
-
-
 void fault_free(void);
 
 int main (void)
